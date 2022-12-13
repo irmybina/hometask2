@@ -6,7 +6,6 @@ import java.util.Random;
 
 public class Field extends JPanel implements ActionListener{
     private final int DOT_SIZE = 16;
-    private final int SIZE = DOT_SIZE*dots;
     protected static final int dots = 10;
     protected static char[][] fieldDots = new char[dots][dots];
     private Timer timer;

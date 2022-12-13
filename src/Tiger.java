@@ -29,7 +29,6 @@ public class Tiger extends Animal {
         }
         addBorders();
     }
-
     private void addBorders(){
         for (int i=0; i<Field.dots; i++){
             memory[i][0].setLeft(-1000000);
@@ -125,6 +124,9 @@ public class Tiger extends Animal {
             Field.fieldDots[destinationX][destinationY] = 't';
             animalX = destinationX;
             animalY = destinationY;
+        }
+        else {
+            Field.stepsCount--;
         }
     }
 
